@@ -48,3 +48,40 @@ $('.slider').slick({
     fade: true,
     infinite: true,
 });
+$('.footer-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: '<i class="fas fa-angle-left"></i>',
+    nextArrow: '<i class="fas fa-angle-right"></i>',
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    dots: false,
+    fade: true,
+    infinite: true,
+});
+
+$('.patner-slider').slick({
+    arrows: true,
+    prevArrow: '<i class="fas fa-angle-left"></i>',
+    nextArrow: '<i class="fas fa-angle-right"></i>',
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    dots: false,
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+            }
+    },
+
+
+  ]
+});
