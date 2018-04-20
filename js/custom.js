@@ -60,6 +60,16 @@ $('.footer-slider').slick({
     dots: false,
     fade: true,
     infinite: true,
+    responsive: [
+
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                arrows: false,
+            }
+    }
+  ]
 });
 
 $('.patner-slider').slick({
@@ -75,13 +85,30 @@ $('.patner-slider').slick({
     slidesToScroll: 1,
     responsive: [
         {
-            breakpoint: 1200,
+            breakpoint: 1199,
+            settings: {
+                slidesToShow: 4,
+            }
+    },
+        {
+            breakpoint: 991,
             settings: {
                 slidesToShow: 3,
-                slidesToScroll: 3,
+            }
+    },
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 2,
             }
     },
 
-
+        {
+            breakpoint: 575,
+            settings: {
+                slidesToShow: 2,
+                arrows: false,
+            }
+    }
   ]
 });

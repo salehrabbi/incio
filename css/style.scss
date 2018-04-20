@@ -21,7 +21,7 @@ p {
 .slider {
     position: relative;
     i {
-        font-size: 30px;
+        font-size: rem(30px);
         cursor: pointer;
         color: #fff;
         position: absolute;
@@ -184,7 +184,7 @@ p {
     background: #556F7B;
     color: #fff;
     text-align: center;
-    font-size: 40px;
+    font-size: rem(40px);
     font-weight: 700;
     font-style: italic;
     position: relative;
@@ -215,7 +215,7 @@ p {
     margin: 0;
     h2 {
         padding: 5px 15px;
-        font-size: 35px;
+        font-size: rem(35px);
     }
     svg {
         margin: 0;
@@ -257,7 +257,7 @@ p {
                 p {
                     margin-top: 15px;
                     font-weight: 500;
-                    font-size: 16px;
+                    font-size: rem(16px);
                 }
                 img {
                     max-width: 100%;
@@ -297,7 +297,7 @@ p {
         position: relative;
         margin-bottom: 42px;
         .date {
-            font-size: 11px;
+            font-size: rem(11px);
             font-weight: 500;
             color: #fff;
             position: absolute;
@@ -333,7 +333,7 @@ p {
                 height: 59px;
                 background: #3C5494;
                 color: #fff;
-                font-size: 25px;
+                font-size: rem(25px);
                 text-align: center;
                 display: block;
                 padding-top: 8px;
@@ -347,17 +347,17 @@ p {
             padding: 15px;
             padding-right: 55px;
             .title {
-                font-size: 17px;
+                font-size: rem(17px);
                 font-weight: 500;
                 color: #000;
             }
             p {
-                font-size: 12px;
+                font-size: rem(12px);
                 margin-top: 20px;
                 margin-bottom: 20px;
             }
             .more {
-                font-size: 12px;
+                font-size: rem(12px);
                 font-weight: 500;
                 color: #4DAF50;
             }
@@ -395,7 +395,7 @@ p {
             margin: 0;
             background: #D51116;
             color: #fff;
-            font-size: 15px;
+            font-size: rem(15px);
             padding: 20px 35px;
             position: relative;
             i {
@@ -425,7 +425,7 @@ p {
                     float: left;
                     width: calc(100% - 127px);
                     color: #fff;
-                    font-size: 16px;
+                    font-size: rem(16px);
                     padding: 0 15px;
                 }
             }
@@ -444,7 +444,7 @@ p {
 .show-more {
     background: #119D46;
     color: #fff;
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: 500;
     text-transform: uppercase;
     border-radius: 0;
@@ -477,11 +477,11 @@ p {
             border-right: 1px solid #E8E8E8;
             font-family: $m;
             p {
-                font-size: 70px;
+                font-size: rem(70px);
                 line-height: .9;
             }
             small {
-                font-size: 15px;
+                font-size: rem(15px);
                 text-transform: uppercase;
             }
         }
@@ -490,14 +490,14 @@ p {
             padding: 0 15px;
             .title {
                 color: #000;
-                font-size: 17px;
+                font-size: rem(17px);
                 font-weight: 500;
                 display: inline-block;
                 margin-bottom: 5px;
             }
             .time,
             .place {
-                font-size: 14px;
+                font-size: rem(14px);
                 padding: 2px 0;
                 font-family: $m;
                 i {
@@ -516,7 +516,7 @@ p {
     h3 {
         text-align: center;
         margin: 0;
-        font-size: 22px;
+        font-size: rem(22px);
         font-weight: 500;
         margin-bottom: 40px;
     }
@@ -554,7 +554,7 @@ p {
         }
     }
     input[type="submit"] {
-        font-size: 18px;
+        font-size: rem(18px);
         background: none;
         border: 3px solid #4DAF50;
         height: 34px;
@@ -569,7 +569,7 @@ p {
     margin-top: 80px;
     margin-bottom: 47px;
     i {
-        font-size: 30px;
+        font-size: rem(30px);
         color: #fff;
         position: absolute;
         left: 15px;
@@ -635,7 +635,7 @@ p {
     input[type="submit"] {
         width: 100%;
         background: none;
-        font: 500 18px $f;
+        font: 500 rem(18px) $f;
         color: #fff;
         border: none;
         height: rem(48px);
@@ -657,7 +657,7 @@ p {
     .patner-slider {
         position: relative;
         i {
-            font-size: 30px;
+            font-size: rem(30px);
             color: #A5A5A3;
             position: absolute;
             left: 15px;
@@ -688,7 +688,7 @@ p {
     color: #fff;
     font-family: $m;
     p {
-        font-size: 14px;
+        font-size: rem(14px);
     }
     b {
         font-weight: 600;
@@ -719,7 +719,7 @@ p {
                 text-align: center;
                 color: #3C5494;
                 transition: .3s;
-                font-size: 13px;
+                font-size: rem(13px);
                 &:hover {
                     background: #3C5494;
                     color: #fff;
@@ -760,6 +760,6 @@ p {
 .copy {
     background: #000;
     color: #fff;
-    font-size: 20px;
+    font-size: rem(20px);
     padding: 18px 0;
 }
