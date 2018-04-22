@@ -112,3 +112,88 @@ $('.patner-slider').slick({
     }
   ]
 });
+
+
+
+
+
+
+
+
+
+$(document).ready(function () {
+    $(".social-top-2 #font-resize-control").click(function () {
+        $(".social-top-2 .font-resize").toggleClass("active");
+        $(".social-top-2 #google_translate_element").removeClass("active");
+    });
+    $(".social-top-2 #translate").click(function () {
+        $(".social-top-2 #google_translate_element").toggleClass("active");
+        $(".social-top-2 .font-resize").removeClass("active");
+    });
+    $(".font-resize .fa-plus").click(function () {
+        var fontSize = parseInt($(this).css("font-size"));
+        fontSize = fontSize + 1 + "px";
+        $('html').css({
+            'font-size': fontSize
+        });
+    });
+    $(".font-resize .fa-minus").click(function () {
+        var fontSize = parseInt($(this).css("font-size"));
+        fontSize = fontSize - 1 + "px";
+        $('html').css({
+            'font-size': fontSize
+        });
+    });
+    $(".black-white").click(function () {
+        $("section,footer,.navbar-collapse,.navbar-brand,.header-top").toggleClass("gray");
+        $(".goog-te-banner-frame").toggleClass("translate-posotion");
+    });
+
+
+    $(".social-top-3 #search-control").click(function () {
+        $(".social-top-3 .search-top-2").toggleClass("active");
+        $(".social-top-3 .font-resize").removeClass("active");
+        $("#google_translate_element").removeClass("active");
+    });
+    $(".social-top-3 #font-resize-control").click(function () {
+        $(".social-top-3 .font-resize").toggleClass("active");
+        $(".social-top-3 .search-top-2").removeClass("active");
+        $("#google_translate_element").removeClass("active");
+    });
+    $(".social-top-3 #translate").click(function () {
+        $("#google_translate_element").toggleClass("active");
+        $(".social-top-3 .search-top-2").removeClass("active");
+        $(".social-top-3 .font-resize").removeClass("active");
+    });
+
+
+
+
+
+});
+
+
+
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+        pageLanguage: 'es'
+    }, 'google_translate_element');
+}
+
+
+
+
+
+
+
+
+
+$(document).scroll(function (e) {
+    var scrollTop = $(document).scrollTop();
+    if (scrollTop > 0) {
+        console.log(scrollTop);
+        $('.main-header').addClass('fixed');
+    } else {
+        $('.main-header').removeClass('fixed');
+    }
+});
