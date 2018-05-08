@@ -122,13 +122,32 @@ $('.patner-slider').slick({
 
 
 $(document).ready(function () {
-    $(".social-top-2 #font-resize-control").click(function () {
-        $(".social-top-2 .font-resize").toggleClass("active");
-        $(".social-top-2 #google_translate_element").removeClass("active");
+    $(".header-top .social-top-2 #font-resize-control").click(function () {
+        $(".header-top .social-top-2 .font-resize").toggleClass("active");
+        $("#google_translate_element").removeClass("active");
     });
-    $(".social-top-2 #translate").click(function () {
-        $(".social-top-2 #google_translate_element").toggleClass("active");
-        $(".social-top-2 .font-resize").removeClass("active");
+    
+    $(".main-mega-menu .social-top-2 #font-resize-control").click(function () {
+        $(".main-mega-menu .social-top-2 .font-resize").toggleClass("active");
+        $("#google_translate_element").removeClass("active");
+        $(".search-top-2.search-top").removeClass("active");
+    });
+    $(".translation").click(function () {
+        $("#google_translate_element").toggleClass("active");
+        $(".header-top .social-top-2 .font-resize").removeClass("active");
+        $(".main-mega-menu .social-top-2 .font-resize").removeClass("active");
+        $(".search-top-2.search-top").removeClass("active");
+    });
+    
+    
+    
+    
+    
+    
+    $(".search-tigger").click(function () {
+        $(".search-top-2.search-top").toggleClass("active");
+        $(".main-mega-menu .social-top-2 .font-resize").removeClass("active");
+        $("#google_translate_element").removeClass("active");
     });
     $(".font-resize .fa-plus").click(function () {
         var fontSize = parseInt($(this).css("font-size"));
@@ -148,27 +167,6 @@ $(document).ready(function () {
         $("section,footer,.navbar-collapse,.navbar-brand,.header-top").toggleClass("gray");
         $(".goog-te-banner-frame").toggleClass("translate-posotion");
     });
-
-
-    $(".social-top-3 #search-control").click(function () {
-        $(".social-top-3 .search-top-2").toggleClass("active");
-        $(".social-top-3 .font-resize").removeClass("active");
-        $("#google_translate_element").removeClass("active");
-    });
-    $(".social-top-3 #font-resize-control").click(function () {
-        $(".social-top-3 .font-resize").toggleClass("active");
-        $(".social-top-3 .search-top-2").removeClass("active");
-        $("#google_translate_element").removeClass("active");
-    });
-    $(".social-top-3 #translate").click(function () {
-        $("#google_translate_element").toggleClass("active");
-        $(".social-top-3 .search-top-2").removeClass("active");
-        $(".social-top-3 .font-resize").removeClass("active");
-    });
-
-
-
-
 
 });
 
