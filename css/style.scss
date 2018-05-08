@@ -23,6 +23,12 @@ p {
 }
 
 
+.gray {
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
 /*================================ header ===================================*/
 
 .header-top {
@@ -36,16 +42,16 @@ p {
     svg {
         height: 28px;
         width: 28px;
-        margin-left: 14px;
+//        margin-left: 14px;
     }
     .social-top {
         a {
             color: #fff;
             margin-right: 25px;
             font-size: 18px;
-            &:last-child {
-                margin-right: 0;
-            }
+//            &:last-child {
+//                margin-right: 0;
+//            }
         }
     }
 
@@ -59,6 +65,10 @@ p {
     li {
         display: inline-block;
         position: relative;
+        > a{
+            display: block;
+            margin-left: 14px;
+        }
         .font-resize {
             background: #119D46;
             padding: 0.625rem;
@@ -134,9 +144,70 @@ body {
 
 .main-mega-menu {
     padding-top: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+    .fa-sort-down {
+        display: none;
+    }
+    .home {
+        display: none;
+    }
+    .mobile-icon {
+        display: none;
+    }
 }
 
+.search-logo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-left: 1px solid #EBEBEB;
+    height: 100%;
+    width: 70px;
+    text-align: center;
+    padding: 15px 0;
+    cursor: pointer;
+    display: none;
+    form {
+        position: absolute;
+        top: 180%;
+        z-index: 9999;
+        opacity: 0;
+        visibility: hidden;
+        right: 0;
+        left: auto;
+        width: 320px;
+        background: #000;
+        -webkit-transition: .3s;
+        transition: .3s;
+        input {
+            background: transparent;
+            float: left;
+            border: none;
+            border-bottom: 0.0625rem solid #fff;
+            width: calc(73% - 20px);
+            margin: 10px;
+            color: #fff;
+        }
+        button {
+            background: rgba(0, 0, 0, 0.5);
+            float: left;
+            width: 27%;
+            border: none;
+            height: 50px;
+        }
+    }
+    form.active {
+        top: 100%;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+
 .main-header.fixed {
+    .yamm .navbar-collapse {
+        width: 100%;
+    }
     .main-mega-menu {
         padding-top: 5px;
     }
@@ -262,7 +333,7 @@ body {
         }
     }
     .dropdown-menu {
-        background: rgba(255, 255, 255, .90);
+        background: rgba(255, 255, 255, .94);
         width: calc(100% - 190px);
         left: auto !important;
         padding: 25px 22px;
@@ -317,6 +388,7 @@ body {
                 .img {
                     width: 21px;
                     float: left;
+                    text-align: center;
                     img {
                         max-width: 100%;
                     }

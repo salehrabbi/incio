@@ -167,6 +167,12 @@ $(document).ready(function () {
         $("section,footer,.navbar-collapse,.navbar-brand,.header-top").toggleClass("gray");
         $(".goog-te-banner-frame").toggleClass("translate-posotion");
     });
+    $(".search-logo").click(function () {
+        $(".search-logo form").toggleClass("active");
+    });
+    $("a").click(function () {
+        $(".tooltip").removeClass("in");
+    });
 
 });
 
@@ -191,7 +197,14 @@ $(document).scroll(function (e) {
     if (scrollTop > 0) {
         console.log(scrollTop);
         $('.main-header').addClass('fixed');
+        $(".header-top .social-top-2 .font-resize").removeClass("active");
     } else {
         $('.main-header').removeClass('fixed');
     }
+});
+
+
+
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
 });

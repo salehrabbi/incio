@@ -1,4 +1,210 @@
 @import '_rem';
+
+
+@media (max-width:1199px){
+    /*Menu responsive*/
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,
+    .navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav > li {
+        float: none;
+    }
+    .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in {
+        display: block !important;
+    }
+
+    .yamm .navbar-nav,
+    .yamm,
+    .main-mega-menu .home {
+        display: block;
+    }
+    .main-mega-menu .mobile-icon {
+        display: inline-block;
+    }
+    .yamm .navbar-collapse {
+        width: 100%;
+        padding-left: 15px;
+    }
+    .menu-icon.hid,
+    .header-top {
+        display: none;
+    }
+    .yamm .navbar-brand {
+        width: 90px;
+        margin: 0 auto;
+        display: block;
+        float: none;
+        padding: 0;
+        padding-top: 6px;
+    }
+    .main-header.fixed .yamm .navbar-brand {
+        width: 90px;
+    }
+    .yamm .navbar-header {
+        padding: 0;
+    }
+    .main-mega-menu {
+        padding-top: 0;
+    }
+    .navbar-toggle {
+        float: left;
+        background: #119D46;
+        margin: 0;
+        border-radius: 0;
+        padding: 0 12px;
+        padding-top: 14px;
+        padding-bottom: 7px;
+        border: none;
+    }
+    .yamm {
+        box-shadow: 0 0 3px rgba(0, 0, 0, .46);
+    }
+    .main-header {
+        .container {
+            width: 100%;
+        }
+    }
+    .navbar-default .navbar-toggle:focus,
+    .navbar-default .navbar-toggle:hover {
+        background-color: #119D46;
+    }
+    .main-header.fixed .main-mega-menu {
+        padding-top: 0;
+    }
+    .main-header.fixed .yamm .navbar-header {
+        padding-bottom: 0;
+    }
+    .yamm .yamm-fw {
+        text-align: left;
+        padding-bottom: 0 !important;
+    }
+    .yamm .navbar-nav > li > a {
+        height: 50px;
+        padding: 0 40px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #B9B9B9;
+        margin: 0;
+        font-weight: 500;
+        font-size: 15px;
+        &:hover {
+            color: #119D46;
+            .mobile-icon .cls-1 {
+                fill: #119D46;
+            }
+            i {
+                color: #119D46;
+            }
+        }
+        i {
+            margin-left: auto;
+            position: relative;
+            top: -4px;
+            display: block;
+        }
+        span {
+            width: 35px;
+            display: inline-block;
+            margin-right: 15px;
+            vertical-align: middle;
+            text-align: center;
+        }
+    }
+    .yamm .navbar-collapse {
+        padding: 0;
+    }
+    .main-header.fixed .yamm .dropdown-menu {
+        width: 100%;
+    }
+    .main-header .yamm .dropdown-menu {
+        width: 100%;
+        position: static;
+        background: #F5F5F5;
+        padding: 0;
+        border: none;
+        box-shadow: none;
+    }
+    .yamm .navbar-nav {
+        max-height: 380px;
+        overflow: scroll;
+        margin-bottom: 0;
+    }
+    .yamm .navbar-collapse {
+        overflow: hidden;
+    }
+    .yamm .dropdown-menu ul {
+        padding-left: 15px;
+    }
+    .yamm .dropdown-menu li.grid-demo .list-item li {
+        margin-bottom: 15px;
+        a {
+            &:hover {
+                color: #119D46;
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .grid-demo {
+        img {
+            width: auto !important;
+            max-width: 100%;
+        }
+        .row {
+            margin: 0;
+            [class*='col-'] {
+                border-bottom: 1px solid #E2E2E2;
+                padding-left: 90px;
+                padding-right: 15px;
+                padding-top: 20px;
+                padding-bottom: 15px;
+            }
+        }
+    }
+    .yamm .yamm-fw.open > a {
+        .mobile-icon .cls-1 {
+            fill: #119D46;
+        }
+        i {
+            position: static;
+            &:before {
+                content: "\f0de";
+            }
+        }
+    }
+    .search-logo {
+        display: block;
+    }
+}
+
 @media (max-width:991px) {
     .service .divition {
         padding: 15px 0;
@@ -17,6 +223,8 @@
     .service .service-provide {
         padding-top: 65px;
     }
+
+    
 }
 
 @media (max-width:767px) {
