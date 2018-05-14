@@ -1,4 +1,8 @@
 @media (max-width: 1199px) {
+  .main-content-single article .tags .comment {
+    text-align: left;
+    margin-top: 10px; }
+
   /*Menu responsive*/
   .navbar-header {
     float: none; }
@@ -199,7 +203,10 @@
     padding-bottom: 30px; }
 
   .service .service-provide {
-    padding-top: 65px; } }
+    padding-top: 65px; }
+
+  .main-content-single aside {
+    margin-top: 50px; } }
 @media (max-width: 767px) {
   .subscribe h2 {
     margin-bottom: 15px;
@@ -245,7 +252,10 @@
 
   .section-head.medium h2 {
     padding: 10px 15px;
-    font-size: 1.25rem; } }
+    font-size: 1.25rem; }
+
+  .main-content-single article h2 {
+    font-size: 30px; } }
 @media (max-width: 480px) {
   .event .item-wraper .item {
     -webkit-box-orient: horizontal;
@@ -258,4 +268,23 @@
       width: calc(100% - 160px); }
     .event .item-wraper .item .text {
       width: 100%;
-      padding: 15px; } }
+      padding: 15px; }
+
+  aside .recent-event .item {
+    margin-bottom: 20px;
+    display: block;
+    border-bottom: 1px solid #E8E8E8;
+    padding-bottom: 20px; }
+    aside .recent-event .item:last-child {
+      border-bottom: none; }
+
+  aside .recent-event .item .date {
+    border-right: none;
+    margin-bottom: 15px;
+    width: 100%; }
+
+  .main-content-single article h2 {
+    font-size: 23px; }
+
+  .page-top h1 {
+    font-size: 26px; } }

@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="">
+    <meta name="description" content="description here">
+    <meta name="keywords" content="keywords,here">
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+    <title>Incio - Single</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,600|Ubuntu:400,400i,500,500i,700,700i" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/yamm.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="body">
+
+    <header class="main-header">
+        <div class="header-top">
+            <div class="container">
+                <div class="row flex">
+                    <div class="col-lg-3 col-md-4">
+                        <p>Última actualización 10/12/18</p>
+                    </div>
+                    <div class="col-lg-7 col-md-5">
+                        <div class="social-top text-right">
+                            <a data-toggle="tooltip" data-placement="bottom" title="Facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a data-toggle="tooltip" data-placement="bottom" title="Youtube" href="#"><i class="fab fa-youtube"></i></a>
+                            <a data-toggle="tooltip" data-placement="bottom" title="Twitter" href="#"><i class="fab fa-twitter"></i></a>
+                            <a data-toggle="tooltip" data-placement="bottom" title="Pinterest" href="#"><i class="fab fa-pinterest-p"></i></a>
+                            <a data-toggle="tooltip" data-placement="bottom" title="Instagram" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 text-right">
+                        <ul class="no-style social-top-2">
+                            <li>
+                                <a data-toggle="tooltip" data-placement="bottom" title="Font Resize" id="font-resize-control" href="javascript:void(0);">
+                                <svg id="Group_680" data-name="Group 680" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+                              <defs>
+                                <style>
+                                  .cls-1, .cls-2 {
+                                    fill: #fff;
+                                  }
+                            
+                                  .cls-1 {
+                                    fill-rule: evenodd;
+                                  }
+                                </style>
+                              </defs>
+                              <path id="Path_873" data-name="Path 873" class="cls-1" d="M14,0A14,14,0,1,1,0,14,14.041,14.041,0,0,1,14,0Zm0,1.9A12.1,12.1,0,1,1,1.9,14,12.078,12.078,0,0,1,14,1.9Z"/>
+                              <g id="Group_677" data-name="Group 677">
+                                <path id="Path_874" data-name="Path 874" class="cls-2" d="M10.4,16.3H6.5l-.9,3.1H3.8L7.6,7H9.3l3.8,12.4H11.3ZM6.9,14.9H10L8.5,9.5H8.4Z"/>
+                              </g>
+                              <g id="Group_678" data-name="Group 678">
+                                <path id="Path_875" data-name="Path 875" class="cls-2" d="M20.8,17.1H17.9l-.7,2.3H16l2.8-9H20l2.7,9H21.4Zm-2.6-1h2.3l-1.1-3.9h0Z"/>
+                              </g>
+                              <g id="Group_679" data-name="Group 679">
+                                <path id="Path_876" data-name="Path 876" class="cls-2" d="M13.2,8.1h1V9h-1v1.4h-.9V9h-1V8.1h1V6.8h.9Z"/>
+                              </g>
+                            </svg>
+                            </a>
+                                <div class="font-resize">
+                                    <i data-toggle="tooltip" data-placement="bottom" title="" class="fa fa-plus" data-original-title="A+"></i>
+                                    <i data-toggle="tooltip" data-placement="bottom" title="" class="fa fa-minus" data-original-title="A-"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="black-white" data-toggle="tooltip" data-placement="bottom" title="Dark Mode" href="javascript:void(0);"><svg id="Group_683" data-name="Group 683" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+                              <defs>
+                                <style>
+                                  .cls-1, .cls-2 {
+                                    fill: #fff;
+                                  }
+                            
+                                  .cls-1 {
+                                    fill-rule: evenodd;
+                                  }
+                                </style>
+                              </defs>
+                              <path id="Path_877" data-name="Path 877" class="cls-1" d="M14,0A14,14,0,1,1,0,14,14.041,14.041,0,0,1,14,0Zm0,1.9A12.1,12.1,0,1,1,1.9,14,12.078,12.078,0,0,1,14,1.9Z"/>
+                              <g id="Group_682" data-name="Group 682">
+                                <g id="Group_681" data-name="Group 681">
+                                  <path id="Path_878" data-name="Path 878" class="cls-2" d="M14,7.8c-4,0-7.6,2.2-10.3,5.7a.908.908,0,0,0,0,1C6.4,18,10,20.2,14,20.2s7.6-2.2,10.3-5.7a.908.908,0,0,0,0-1C21.6,10,18,7.8,14,7.8Zm.3,10.6a4.461,4.461,0,0,1-4.7-4.7,4.33,4.33,0,0,1,4.1-4.1,4.41,4.41,0,1,1,.6,8.8Zm-.1-2a2.355,2.355,0,1,1,2.2-2.2,2.547,2.547,0,0,1-2.2,2.2Zm0,0"/>
+                                </g>
+                              </g>
+                            </svg>
+                            </a>
+                            </li>
+                            <li>
+                                <a data-toggle="tooltip" data-placement="bottom" title="Translation" class="translation" href="javascript:void(0);"><svg id="Group_685" data-name="Group 685" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+                              <defs>
+                                <style>
+                                  .cls-1, .cls-2 {
+                                    fill: #fff;
+                                  }
+                            
+                                  .cls-1 {
+                                    fill-rule: evenodd;
+                                  }
+                                </style>
+                              </defs>
+                              <path id="Path_879" data-name="Path 879" class="cls-1" d="M14,0A14,14,0,1,1,0,14,14.041,14.041,0,0,1,14,0Zm0,1.9A12.1,12.1,0,1,1,1.9,14,12.078,12.078,0,0,1,14,1.9Z"/>
+                              <g id="Group_684" data-name="Group 684">
+                                <path id="Path_880" data-name="Path 880" class="cls-2" d="M19.6,11.3a.634.634,0,0,0-.6-.5h-.7a.56.56,0,0,0-.6.5l-1.4,5a.667.667,0,0,0,1.3.3l.3-.9h1.8l.3.9a.738.738,0,0,0,.6.5h.2a.657.657,0,0,0,.5-.8Zm-1.5,3.1.5-1.7.5,1.7Z"/>
+                                <path id="Path_881" data-name="Path 881" class="cls-2" d="M21.1,7.2H17.2a1.613,1.613,0,0,0-.3-.9,1.382,1.382,0,0,0-1.1-.6H7.4A2.951,2.951,0,0,0,4.6,8.6v7.9a2.773,2.773,0,0,0,2.2,2.7v3a.675.675,0,0,0,.4.6c.1,0,.2.1.3.1.2,0,.3-.1.5-.2l3.4-3.4H12a1.613,1.613,0,0,0,.3.9,1.382,1.382,0,0,0,1.1.6H21A2.8,2.8,0,0,0,23.8,18V10A2.711,2.711,0,0,0,21.1,7.2ZM12.4,18H11a.764.764,0,0,0-.5.2L8.1,20.6v-2a.684.684,0,0,0-.7-.7,1.538,1.538,0,0,1-1.5-1.5V8.6A1.538,1.538,0,0,1,7.4,7.1h8.4l-2.3,7.3h-.1a3.766,3.766,0,0,1-1.5-.9A5.574,5.574,0,0,0,13,10.7h.8a.7.7,0,1,0,0-1.4H11.6a.7.7,0,0,0-1.4,0H8.1a.7.7,0,1,0,0,1.4h3.6a5.964,5.964,0,0,1-.7,1.8,2.186,2.186,0,0,0-.3-.5.671.671,0,1,0-1.2.6c.2.4.4.7.6,1.1a5.428,5.428,0,0,1-1.5.9.751.751,0,0,0-.4.9.622.622,0,0,0,.6.4H9a5.162,5.162,0,0,0,1.9-1.2,6.15,6.15,0,0,0,1.9,1.2H13Zm10.1-.1A1.538,1.538,0,0,1,21,19.4H13.4L16.8,8.6h4.3a1.538,1.538,0,0,1,1.5,1.5v7.8Z"/>
+                              </g>
+                            </svg>
+                            </a>
+                                <div id="google_translate_element" class="google_translate_element"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-mega-menu" id="fixed-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="navbar navbar-default yamm">
+                        <div class="navbar-header">
+
+                            <button type="button" data-toggle="collapse" data-target="#navbar-collapse-grid" class="navbar-toggle">
+                            
+                                <svg style="width:45px;height: 32px;" id="Group_1064" data-name="Group 1064" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45.107 31.284">
+  <defs>
+    <style>
+      #Group_1064 .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path id="Path_1202" data-name="Path 1202" class="cls-1" d="M43.283,160.539H1.824a1.819,1.819,0,1,1,0-3.638H43.283a1.819,1.819,0,1,1,0,3.638Z" transform="translate(0 -143.077)"/>
+  <path id="Path_1203" data-name="Path 1203" class="cls-1" d="M43.283,3.647H1.824A1.824,1.824,0,0,1,1.824,0H43.283a1.824,1.824,0,1,1,0,3.647Z"/>
+  <path id="Path_1204" data-name="Path 1204" class="cls-1" d="M43.283,317.347H1.824a1.824,1.824,0,0,1,0-3.647H43.283a1.824,1.824,0,1,1,0,3.647Z" transform="translate(0 -286.063)"/>
+</svg>
+                               
+                            </button>
+                            <div class="search-logo">
+                                <a href="javascript:void(0);">
+                                    <svg style="height: 27px;width: 27px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.489 27.489">
+      <defs>
+        <style>
+          .search-logo .cls-1 {
+            fill: #4daf50;
+          }
+        </style>
+      </defs>
+      <g id="Group_720" data-name="Group 720" transform="translate(0 0)">
+        <g id="Group_719" data-name="Group 719" transform="translate(0 0)">
+          <path id="Path_896" data-name="Path 896" class="cls-1" d="M3.23,18.976a11.031,11.031,0,0,0,13.424,1.716.478.478,0,0,1,.606.1l5.652,5.652c1.11,1.11,2.725,1.413,3.735.4l.2-.2c1.009-1.009.707-2.624-.4-3.735L20.793,17.26c-.2-.2-.1-.606-.1-.606A10.893,10.893,0,0,0,18.976,3.23,11.134,11.134,0,0,0,3.23,18.976Zm13.727-2.019A8.208,8.208,0,0,1,5.35,5.35,8.208,8.208,0,0,1,16.957,16.957Zm0,0" transform="translate(0.025 0.025)"/>
+        </g>
+        <path id="Path_897" data-name="Path 897" class="cls-1" d="M16.185,10.456a1.1,1.1,0,0,1-1.009-.707A5,5,0,0,0,8.615,7.125,1.3,1.3,0,0,1,7.1,6.519a1.249,1.249,0,0,1,.606-1.514,7.351,7.351,0,0,1,9.488,3.836,1.19,1.19,0,0,1-.606,1.514c-.1,0-.3.1-.4.1Zm0,0" transform="translate(0.091 0.067)"/>
+      </g>
+    </svg>
+                                </a>
+                                <form action="#" class="search-top search-top-2 clearfix">
+                                    <input placeholder="Buscar" type="text">
+                                    <button type="submit"><svg style="width: 28px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.489 27.489">
+      <defs>
+        <style>
+          .search-top .cls-1 {
+            fill: #4daf50;
+          }
+        </style>
+      </defs>
+      <g id="Group_720" data-name="Group 720" transform="translate(0 0)">
+        <g id="Group_719" data-name="Group 719" transform="translate(0 0)">
+          <path id="Path_896" data-name="Path 896" class="cls-1" d="M3.23,18.976a11.031,11.031,0,0,0,13.424,1.716.478.478,0,0,1,.606.1l5.652,5.652c1.11,1.11,2.725,1.413,3.735.4l.2-.2c1.009-1.009.707-2.624-.4-3.735L20.793,17.26c-.2-.2-.1-.606-.1-.606A10.893,10.893,0,0,0,18.976,3.23,11.134,11.134,0,0,0,3.23,18.976Zm13.727-2.019A8.208,8.208,0,0,1,5.35,5.35,8.208,8.208,0,0,1,16.957,16.957Zm0,0" transform="translate(0.025 0.025)"/>
+        </g>
+        <path id="Path_897" data-name="Path 897" class="cls-1" d="M16.185,10.456a1.1,1.1,0,0,1-1.009-.707A5,5,0,0,0,8.615,7.125,1.3,1.3,0,0,1,7.1,6.519a1.249,1.249,0,0,1,.606-1.514,7.351,7.351,0,0,1,9.488,3.836,1.19,1.19,0,0,1-.606,1.514c-.1,0-.3.1-.4.1Zm0,0" transform="translate(0.091 0.067)"/>
+      </g>
+    </svg></button>
+                                </form>
+                            </div>
+
+                            <a href="#" class="navbar-brand"><img src="images/logo.png" class="img-responsive" alt=""></a>
+
+                        </div>
+                        <div id="navbar-collapse-grid" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown yamm-fw home"><a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                               
+                               <span><svg class="mobile-icon" style="width: 22px;height: 18px;" id="Group_1113" data-name="Group 1113" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.539 17.86">
+                                     <defs>
+                                       <style>
+                                         .mobile-icon .cls-1 {
+                                           fill: #adabab;
+                                         }
+                                       </style>
+                                     </defs>
+                                     <g id="Group_1112" data-name="Group 1112" transform="translate(0 0)">
+                                       <path id="Path_1223" data-name="Path 1223" class="cls-1" d="M14.4,7.2l-8,6.591v6.792a.833.833,0,0,0,.252.6.8.8,0,0,0,.6.252h5.333V16.105H16.16v5.333h5.333a.833.833,0,0,0,.6-.252.8.8,0,0,0,.252-.6V13.791Zm0,0" transform="translate(-3.18 -3.578)"/>
+                                       <path id="Path_1224" data-name="Path 1224" class="cls-1" d="M22.338,8.7,19.269,6.188V.5a.425.425,0,0,0-.1-.3.37.37,0,0,0-.3-.1H16.2a.425.425,0,0,0-.3.1.37.37,0,0,0-.1.3V3.22L12.376.352A1.857,1.857,0,0,0,11.219,0a1.579,1.579,0,0,0-1.057.352L.151,8.7a.435.435,0,0,0-.151.3.479.479,0,0,0,.1.352l.855,1.006a.3.3,0,0,0,.3.151.542.542,0,0,0,.352-.1l9.66-8.05,9.66,8.05a.425.425,0,0,0,.3.1h.05a.435.435,0,0,0,.3-.151l.855-1.057a.727.727,0,0,0,.1-.352c-.05-.05-.1-.151-.2-.252Zm0,0" transform="translate(0 0)"/>
+                                     </g>
+                                   </svg></span>
+
+                               INICIO <i class="fas fa-sort-down"></i></a>
+                                </li>
+                                <!-- Grid 12 Menu -->
+                                <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                                <span><svg class="mobile-icon" style="width: 13px;
+                                    height: 38px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.152 38">
+                                      <defs>
+                                        <style>
+                                          .mobile-icon .cls-1 {
+                                            fill: #adabab;
+                                          }
+                                        </style>
+                                      </defs>
+                                      <g id="Group_1114" data-name="Group 1114" transform="translate(0 0.072)">
+                                        <path id="Path_1225" data-name="Path 1225" class="cls-1" d="M10.378,9.553c-.169,1.433.843,2.361,0,3.541-.927,1.1-2.023,1.433-3.878,1.265h.169a6.7,6.7,0,0,0,7.419-5.9A6.893,6.893,0,0,0,13.666,5C12.233,6.433,10.547,8.035,10.378,9.553Z" transform="translate(-1.02 -0.796)"/>
+                                        <path id="Path_1226" data-name="Path 1226" class="cls-1" d="M.761,8.335C.592,5.722,5.482,4.035,6.915,1c.422.422.253,1.1.674,1.6.253.253,1.77-1.1,2.7-1.518a6.65,6.65,0,0,0-2.782-1.1A6.7,6.7,0,0,0,.086,5.89a6.885,6.885,0,0,0,.927,4.553A2.97,2.97,0,0,1,.761,8.335Z" transform="translate(-0.002 0)"/>
+                                        <path id="Path_1227" data-name="Path 1227" class="cls-1" d="M12.875,3.992a5.7,5.7,0,0,0,1.433-.422A7.337,7.337,0,0,0,12.875,1.8C12.791,2.559,12.622,3.823,12.875,3.992Z" transform="translate(-1.999 -0.294)"/>
+                                        <path id="Path_1228" data-name="Path 1228" class="cls-1" d="M4.5,15.527A6.1,6.1,0,0,1,2.9,14.6,3.821,3.821,0,0,0,4.5,15.527Z" transform="translate(-0.455 -2.302)"/>
+                                        <path id="Path_1229" data-name="Path 1229" class="cls-1" d="M4.792,15.449A5.339,5.339,0,0,1,2.6,14.1a1.164,1.164,0,0,0,.253.337,6.1,6.1,0,0,0,1.6.927c.084.084.169.084.337.084Z" transform="translate(-0.408 -2.224)"/>
+                                        <path id="Path_1230" data-name="Path 1230" class="cls-1" d="M4.724,14.131a3.046,3.046,0,0,0,2.529-.674c.59-1.18-.927-1.686-.843-2.445.169-1.1,1.6-2.529,2.529-3.372-.674.084-1.1.422-1.433.422-.084-.169.674-1.265.843-1.6-.422.084-1.265,1.012-1.433.927-.253-.253.674-1.518.337-1.686C6.41,7.386,2.11,10,2.194,11.433a1.762,1.762,0,0,0,.337,1.433A6.239,6.239,0,0,0,4.724,14.131Z" transform="translate(-0.34 -0.906)"/>
+                                        <path id="Path_1231" data-name="Path 1231" class="cls-1" d="M2.276,31.093a15.278,15.278,0,0,0,3.71-1.855c1.1-.59,1.265,1.77-.084,2.7a30.706,30.706,0,0,1-3.288,1.939c.169,2.276.253,4.637.337,7h7.5V39.524L9.19,39.271C7.5,38.85,5.9,38.26,6.07,37.67c.253-.59,2.529-.422,4.3-.084h.084v-.253a8.67,8.67,0,0,1-1.433-.084c-1.77-.169-3.457-.59-3.372-1.349.084-.674,2.445-.843,4.215-.759h.674V34.8a3.458,3.458,0,0,0-.927.084c-1.518.084-3.541-.084-3.625-.927C5.9,33.2,7.419,32.78,8.937,32.611a11.873,11.873,0,0,1,1.77-.084v-.253h0c-1.518.253-3.625.422-3.794-.337-.169-.674,1.265-1.349,2.782-1.686L10.96,30a72.64,72.64,0,0,1,2.192-11.3H0A66.572,66.572,0,0,1,2.276,31.093Z" transform="translate(0 -2.946)"/>
+                                      </g>
+                                    </svg></span>
+INSTITUCIONAL<i class="fas fa-sort-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li class="grid-demo">
+                                            <div class="row">
+                                                <div class="col-lg-2">
+                                                    <h3>LISTA DE ITEMS</h3>
+                                                    <ul class="list-item">
+                                                        <li><a href="#">Lista de Items</a></li>
+                                                        <li><a href="#">Lista de Items</a></li>
+                                                        <li><a href="#">Lista de Items</a></li>
+                                                        <li><a href="#">Lista de Items</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-2">
+                                                    <h3>LISTA DE ITEMS</h3>
+                                                    <ul class="list-item tagline">
+                                                        <li>
+                                                            <a href="#">Lista de Items</a>
+                                                            <p>Descripción</p>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Lista de Items</a>
+                                                            <p>Descripción</p>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Lista de Items</a>
+                                                            <p>Descripción</p>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Lista de Items</a>
+                                                            <p>Descripción</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <h3>IMAGEN Y DESCRIPCIÓN</h3>
+                                                    <ul class="list-item icon-big">
+                                                        <li class="clearfix">
+                                                            <img src="images/001-medal.png" alt="">
+                                                            <div class="text">
+                                                                <a href="#">Lista de Items</a>
+                                                                <p>Descripción</p>
+                                                            </div>
+                                                        </li>
+                                                        <li class="clearfix">
+                                                            <img src="images/001-medal.png" alt="">
+                                                            <div class="text">
+                                                                <a href="#">Lista de Items</a>
+                                                                <p>Descripción</p>
+                                                            </div>
+                                                        </li>
+                                                        <li class="clearfix">
+                                                            <img src="images/001-medal.png" alt="">
+                                                            <div class="text">
+                                                                <a href="#">Lista de Items</a>
+                                                                <p>Descripción</p>
+                                                            </div>
+                                                        </li>
+                                                        <li class="clearfix">
+                                                            <img src="images/001-medal.png" alt="">
+                                                            <div class="text">
+                                                                <a href="#">Lista de Items</a>
+                                                                <p>Descripción</p>
+                                                            </div>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-2">
+                                                    <h3>LISTA CON ÍCONOS</h3>
+                                                    <ul class="list-item icon-small">
+                                                        <li class="clearfix">
+                                                            <div class="img">
+                                                                <img src="images/menu-i.png" alt="">
+                                                            </div>
+                                                            <div class="text">
+                                                                <a href="#">Lista de Items</a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="clearfix">
+                                                            <div class="img">
+                                                                <img src="images/menu-i2.png" alt="">
+                                                            </div>
+                                                            <div class="text">
+                                                                <a href="#">Lista de Items</a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="clearfix">
+                                                            <div class="img">
+                                                                <img src="images/menu-i.png" alt="">
+                                                            </div>
+                                                            <div class="text">
+                                                                <a href="#">Lista de Items</a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="clearfix">
+                                                            <div class="img">
+                                                                <img src="images/menu-i.png" alt="">
+                                                            </div>
+                                                            <div class="text">
+                                                                <a href="#">Lista de Items</a>
+                                                            </div>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <h3>IMAGEN</h3>
+                                                    <img style="width: 100%;" src="images/Goal-in-Basket.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!--With Offsets 
+                              -->
+                                <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                                   <span><svg class="mobile-icon" style="width: 23px;height: 23px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.439 23.44">
+                                         <defs>
+                                           <style>
+                                             .mobile-icon .cls-1 {
+                                               fill: #adabab;
+                                             }
+                                           </style>
+                                         </defs>
+                                         <g id="Group_1116" data-name="Group 1116" transform="translate(-0.2 -0.1)">
+                                           <path id="Path_1236" data-name="Path 1236" class="cls-1" d="M22.07,5.96,19.35,4.39,17.78,1.67H14.641L11.92.1,9.2,1.67H6.06L4.49,4.39,1.77,5.96V9.1L.2,11.82l1.57,2.721V17.68L4.49,19.25,6.06,21.97H9.2l2.721,1.57,2.721-1.57H17.78l1.57-2.721,2.721-1.57V14.541l1.57-2.721L22.07,9.1ZM10.821,16.633a1.154,1.154,0,0,1-.785.314,1.065,1.065,0,0,1-.785-.314L5.8,13.18a1.138,1.138,0,0,1,0-1.57l.889-.889a1.138,1.138,0,0,1,1.57,0L10.036,12.5,15.53,7.006a1.138,1.138,0,0,1,1.57,0l.889.889a1.138,1.138,0,0,1,0,1.57Zm0,0" transform="translate(0 0)"/>
+                                         </g>
+                                       </svg></span>
+
+                                   LEY DE TRANSPARENCIA<i class="fas fa-sort-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li class="grid-demo">
+                                            <div class="row">
+                                                <div class="col-sm-4">4</div>
+                                                <div class="col-sm-4 col-sm-offset-4">4 offset 4</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-3 col-sm-offset-3">3 offset 3</div>
+                                                <div class="col-sm-3 col-sm-offset-3">3 offset 3</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6 col-sm-offset-3">6 offset 6</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!--Aside Menu 
+                              -->
+                                <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                                   
+                                   <span><svg class="mobile-icon" style="width: 34px;height: 21px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.96 21.016">
+                                         <defs>
+                                           <style>
+                                             .mobile-icon .cls-1 {
+                                               fill: #adabab;
+                                             }
+                                           </style>
+                                         </defs>
+                                         <path id="Path_1244" data-name="Path 1244" class="cls-1" d="M17.48,0a5.741,5.741,0,1,1-5.721,5.76A5.722,5.722,0,0,1,17.48,0Zm6.2,11.878-2.185-.556a6.841,6.841,0,0,1-8.025,0l-2.185.556A3.949,3.949,0,0,0,8.3,15.692v3.337a1.992,1.992,0,0,0,1.986,1.986H24.71a1.959,1.959,0,0,0,1.947-1.986V15.692A3.914,3.914,0,0,0,23.677,11.878Zm5.165,1.033A3.814,3.814,0,1,0,25.028,9.1,3.815,3.815,0,0,0,28.842,12.911Zm-22.724,0A3.814,3.814,0,1,0,2.3,9.1,3.815,3.815,0,0,0,6.118,12.911ZM7.429,18.99V15.653a4.921,4.921,0,0,1,.675-2.5,4.662,4.662,0,0,1-4.688-.4l-1.43.4A2.636,2.636,0,0,0,0,15.692v2.225a1.323,1.323,0,0,0,1.311,1.311H7.429Q7.429,19.109,7.429,18.99Zm25.545-5.84-1.47-.358a4.584,4.584,0,0,1-4.688.4,4.844,4.844,0,0,1,.715,2.5v3.575h6.118a1.323,1.323,0,0,0,1.311-1.311V15.732a2.682,2.682,0,0,0-1.986-2.582Z"/>
+                                       </svg></span>
+
+                                   ATENCIÓN AL CIUDADANOs<i class="fas fa-sort-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li class="grid-demo">
+                                            <div class="row">
+                                                <div class="col-sm-3"><br>
+                                                    <h3>3</h3><br>
+                                                </div>
+                                                <div class="col-sm-9"><br>
+                                                    <h3>9</h3><br>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!--Nesting Menu 
+                              -->
+                                <li class="dropdown yamm-fw" style="height: 100%;padding-bottom: 10px;">
+                                    <ul class="menu-icon hid" style="padding: 0;margin: 0;list-style: none;height: 100%;">
+                                        <li>
+                                            <ul class="no-style social-top-2 clearfix">
+                                                <li>
+                                                    <a data-toggle="tooltip" data-placement="bottom" title="Font Resize" id="font-resize-control" href="javascript:void(0);">
+                                <svg id="Group_680" data-name="Group 680" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+                              <defs>
+                                <style>
+                                  .menu-icon .cls-1, .menu-icon .cls-2 {
+                                    fill: #119D46;
+                                  }
+                            
+                                  .menu-icon .cls-1 {
+                                    fill-rule: evenodd;
+                                  }
+                                </style>
+                              </defs>
+                              <path id="Path_873" data-name="Path 873" class="cls-1" d="M14,0A14,14,0,1,1,0,14,14.041,14.041,0,0,1,14,0Zm0,1.9A12.1,12.1,0,1,1,1.9,14,12.078,12.078,0,0,1,14,1.9Z"/>
+                              <g id="Group_677" data-name="Group 677">
+                                <path id="Path_874" data-name="Path 874" class="cls-2" d="M10.4,16.3H6.5l-.9,3.1H3.8L7.6,7H9.3l3.8,12.4H11.3ZM6.9,14.9H10L8.5,9.5H8.4Z"/>
+                              </g>
+                              <g id="Group_678" data-name="Group 678">
+                                <path id="Path_875" data-name="Path 875" class="cls-2" d="M20.8,17.1H17.9l-.7,2.3H16l2.8-9H20l2.7,9H21.4Zm-2.6-1h2.3l-1.1-3.9h0Z"/>
+                              </g>
+                              <g id="Group_679" data-name="Group 679">
+                                <path id="Path_876" data-name="Path 876" class="cls-2" d="M13.2,8.1h1V9h-1v1.4h-.9V9h-1V8.1h1V6.8h.9Z"/>
+                              </g>
+                            </svg>
+                            </a>
+                                                    <div class="font-resize">
+                                                        <i data-toggle="tooltip" data-placement="bottom" title="" class="fa fa-plus" data-original-title="A+"></i>
+                                                        <i data-toggle="tooltip" data-placement="bottom" title="" class="fa fa-minus" data-original-title="A-"></i>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a class="black-white" data-toggle="tooltip" data-placement="bottom" title="Dark Mode" href="javascript:void(0);"><svg id="Group_683" data-name="Group 683" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+                              <defs>
+                                <style>
+                                  .cls-1, .cls-2 {
+                                    fill: #fff;
+                                  }
+                            
+                                  .cls-1 {
+                                    fill-rule: evenodd;
+                                  }
+                                </style>
+                              </defs>
+                              <path id="Path_877" data-name="Path 877" class="cls-1" d="M14,0A14,14,0,1,1,0,14,14.041,14.041,0,0,1,14,0Zm0,1.9A12.1,12.1,0,1,1,1.9,14,12.078,12.078,0,0,1,14,1.9Z"/>
+                              <g id="Group_682" data-name="Group 682">
+                                <g id="Group_681" data-name="Group 681">
+                                  <path id="Path_878" data-name="Path 878" class="cls-2" d="M14,7.8c-4,0-7.6,2.2-10.3,5.7a.908.908,0,0,0,0,1C6.4,18,10,20.2,14,20.2s7.6-2.2,10.3-5.7a.908.908,0,0,0,0-1C21.6,10,18,7.8,14,7.8Zm.3,10.6a4.461,4.461,0,0,1-4.7-4.7,4.33,4.33,0,0,1,4.1-4.1,4.41,4.41,0,1,1,.6,8.8Zm-.1-2a2.355,2.355,0,1,1,2.2-2.2,2.547,2.547,0,0,1-2.2,2.2Zm0,0"/>
+                                </g>
+                              </g>
+                            </svg>
+                            </a>
+                                                </li>
+                                                <li>
+                                                    <a data-toggle="tooltip" data-placement="bottom" title="Translation" class="translation" href="javascript:void(0);"><svg id="Group_685" data-name="Group 685" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+                              <defs>
+                                <style>
+                                  .cls-1, .cls-2 {
+                                    fill: #fff;
+                                  }
+                            
+                                  .cls-1 {
+                                    fill-rule: evenodd;
+                                  }
+                                </style>
+                              </defs>
+                              <path id="Path_879" data-name="Path 879" class="cls-1" d="M14,0A14,14,0,1,1,0,14,14.041,14.041,0,0,1,14,0Zm0,1.9A12.1,12.1,0,1,1,1.9,14,12.078,12.078,0,0,1,14,1.9Z"/>
+                              <g id="Group_684" data-name="Group 684">
+                                <path id="Path_880" data-name="Path 880" class="cls-2" d="M19.6,11.3a.634.634,0,0,0-.6-.5h-.7a.56.56,0,0,0-.6.5l-1.4,5a.667.667,0,0,0,1.3.3l.3-.9h1.8l.3.9a.738.738,0,0,0,.6.5h.2a.657.657,0,0,0,.5-.8Zm-1.5,3.1.5-1.7.5,1.7Z"/>
+                                <path id="Path_881" data-name="Path 881" class="cls-2" d="M21.1,7.2H17.2a1.613,1.613,0,0,0-.3-.9,1.382,1.382,0,0,0-1.1-.6H7.4A2.951,2.951,0,0,0,4.6,8.6v7.9a2.773,2.773,0,0,0,2.2,2.7v3a.675.675,0,0,0,.4.6c.1,0,.2.1.3.1.2,0,.3-.1.5-.2l3.4-3.4H12a1.613,1.613,0,0,0,.3.9,1.382,1.382,0,0,0,1.1.6H21A2.8,2.8,0,0,0,23.8,18V10A2.711,2.711,0,0,0,21.1,7.2ZM12.4,18H11a.764.764,0,0,0-.5.2L8.1,20.6v-2a.684.684,0,0,0-.7-.7,1.538,1.538,0,0,1-1.5-1.5V8.6A1.538,1.538,0,0,1,7.4,7.1h8.4l-2.3,7.3h-.1a3.766,3.766,0,0,1-1.5-.9A5.574,5.574,0,0,0,13,10.7h.8a.7.7,0,1,0,0-1.4H11.6a.7.7,0,0,0-1.4,0H8.1a.7.7,0,1,0,0,1.4h3.6a5.964,5.964,0,0,1-.7,1.8,2.186,2.186,0,0,0-.3-.5.671.671,0,1,0-1.2.6c.2.4.4.7.6,1.1a5.428,5.428,0,0,1-1.5.9.751.751,0,0,0-.4.9.622.622,0,0,0,.6.4H9a5.162,5.162,0,0,0,1.9-1.2,6.15,6.15,0,0,0,1.9,1.2H13Zm10.1-.1A1.538,1.538,0,0,1,21,19.4H13.4L16.8,8.6h4.3a1.538,1.538,0,0,1,1.5,1.5v7.8Z"/>
+                              </g>
+                            </svg>
+                            </a>
+
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li style="height: 100%;position: relative;">
+                                            <a data-toggle="tooltip" data-placement="bottom" title="Search" href="javascript:void(0);" class="big search-tigger">
+                                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.489 27.489">
+  <defs>
+    <style>
+      .search-tigger .cls-1 {
+        fill: #4daf50;
+      }
+    </style>
+  </defs>
+  <g id="Group_720" data-name="Group 720" transform="translate(0 0)">
+    <g id="Group_719" data-name="Group 719" transform="translate(0 0)">
+      <path id="Path_896" data-name="Path 896" class="cls-1" d="M3.23,18.976a11.031,11.031,0,0,0,13.424,1.716.478.478,0,0,1,.606.1l5.652,5.652c1.11,1.11,2.725,1.413,3.735.4l.2-.2c1.009-1.009.707-2.624-.4-3.735L20.793,17.26c-.2-.2-.1-.606-.1-.606A10.893,10.893,0,0,0,18.976,3.23,11.134,11.134,0,0,0,3.23,18.976Zm13.727-2.019A8.208,8.208,0,0,1,5.35,5.35,8.208,8.208,0,0,1,16.957,16.957Zm0,0" transform="translate(0.025 0.025)"/>
+    </g>
+    <path id="Path_897" data-name="Path 897" class="cls-1" d="M16.185,10.456a1.1,1.1,0,0,1-1.009-.707A5,5,0,0,0,8.615,7.125,1.3,1.3,0,0,1,7.1,6.519a1.249,1.249,0,0,1,.606-1.514,7.351,7.351,0,0,1,9.488,3.836,1.19,1.19,0,0,1-.606,1.514c-.1,0-.3.1-.4.1Zm0,0" transform="translate(0.091 0.067)"/>
+  </g>
+</svg>
+                                               <p>BUSCAR</p>
+                                            </a>
+                                            <form action="#" class="search-top search-top-2 clearfix">
+                                                <input placeholder="Buscar" type="text">
+                                                <button type="submit"><svg style="width: 28px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.489 27.489">
+  <defs>
+    <style>
+      .search-top-2 .cls-1 {
+        fill: #4daf50;
+      }
+    </style>
+  </defs>
+  <g id="Group_720" data-name="Group 720" transform="translate(0 0)">
+    <g id="Group_719" data-name="Group 719" transform="translate(0 0)">
+      <path id="Path_896" data-name="Path 896" class="cls-1" d="M3.23,18.976a11.031,11.031,0,0,0,13.424,1.716.478.478,0,0,1,.606.1l5.652,5.652c1.11,1.11,2.725,1.413,3.735.4l.2-.2c1.009-1.009.707-2.624-.4-3.735L20.793,17.26c-.2-.2-.1-.606-.1-.606A10.893,10.893,0,0,0,18.976,3.23,11.134,11.134,0,0,0,3.23,18.976Zm13.727-2.019A8.208,8.208,0,0,1,5.35,5.35,8.208,8.208,0,0,1,16.957,16.957Zm0,0" transform="translate(0.025 0.025)"/>
+    </g>
+    <path id="Path_897" data-name="Path 897" class="cls-1" d="M16.185,10.456a1.1,1.1,0,0,1-1.009-.707A5,5,0,0,0,8.615,7.125,1.3,1.3,0,0,1,7.1,6.519a1.249,1.249,0,0,1,.606-1.514,7.351,7.351,0,0,1,9.488,3.836,1.19,1.19,0,0,1-.606,1.514c-.1,0-.3.1-.4.1Zm0,0" transform="translate(0.091 0.067)"/>
+  </g>
+</svg></button>
+                                            </form>
+                                        </li>
+
+                                    </ul>
+
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-top">
+        <div class="container">
+            <div class="row flex">
+                <div class="col-md-6">
+                    <h1>ÚLTIMAS NOTICIAS</h1>
+                </div>
+                <div class="col-md-6">
+                    <ul class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Private</a></li>
+                        <li><a href="#">Pictures</a></li>
+                        <li class="active">Vacation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="main-content-single">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-7">
+                    <article class="clearfix">
+                        <h2>Camino a la conquista en el continente Europeo</h2>
+                        <img src="images/dc312-pollo1.jpg" alt="">
+                        <date>
+                            
+                            <span>
+                            <svg style="height: 25px;width: 25px;" id="Group_1033" data-name="Group 1033" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.001 25">
+  <defs>
+    <style>
+      #Group_1033 .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path id="Path_1189" data-name="Path 1189" class="cls-1" d="M22.816,2.928h-.743V2.184a2.184,2.184,0,0,0-4.368,0v.743H14.777V2.184A2.222,2.222,0,0,0,12.546,0a2.181,2.181,0,0,0-2.184,2.184v.743H7.342V2.184A2.192,2.192,0,0,0,5.112,0,2.152,2.152,0,0,0,2.928,2.184v.743H2.184A2.181,2.181,0,0,0,0,5.112v17.7A2.181,2.181,0,0,0,2.184,25H22.816A2.181,2.181,0,0,0,25,22.816V5.112A2.152,2.152,0,0,0,22.816,2.928Zm-3.671-.743a.743.743,0,1,1,1.487,0V5.112a.743.743,0,1,1-1.487,0Zm-7.3,0a.743.743,0,1,1,1.487,0V5.112a.743.743,0,1,1-1.487,0Zm-7.435,0a.743.743,0,0,1,1.487,0V5.112a.743.743,0,0,1-1.487,0Zm-2.23,2.23h.743v.7a2.184,2.184,0,0,0,4.368,0v-.7h3.02v.7a2.184,2.184,0,0,0,4.368,0v-.7h2.928v.7a2.184,2.184,0,0,0,4.368,0v-.7h.743a.734.734,0,0,1,.743.743V8.922H1.487V5.112A.715.715,0,0,1,2.184,4.414Zm21.375,18.4a.734.734,0,0,1-.743.743H2.184a.734.734,0,0,1-.743-.743V10.362H23.513V22.816Z"/>
+  <path id="Path_1190" data-name="Path 1190" class="cls-1" d="M7.043,35.67h17.7a.734.734,0,0,0,.743-.743V26.143a.734.734,0,0,0-.743-.743H7.043a.734.734,0,0,0-.743.743v8.829A.725.725,0,0,0,7.043,35.67ZM12.155,31.3h3.02v2.928h-3.02Zm-1.441,2.928H7.787V31.3h2.928ZM16.662,31.3H19.59v2.928H16.662V31.3Zm4.414,0H24v2.928H21.077ZM24,29.814H21.077V26.887H24Zm-4.414,0H16.662V26.887H19.59Zm-4.368,0H12.2V26.887h3.02Zm-4.507,0H7.787V26.887h2.928Z" transform="translate(-3.372 -13.597)"/>
+</svg>
+Jueves 05 de abril de 2018</span>
+                        </date>
+                        <p>A sus 23 años de edad, Sebastian Posada deportista caldeño corredor de Downhill, se ha coronado campeón nacional en la modalidad Junior y Elite. En la actualidad logró ser top 10 entre 90 corredores a nivel continental, en el pasado campeonato Panamericano MTB 2017, que se realizó en Paipa Boyacá en la categoría Elite. Este ciclista representará a nuestro municipio y a todo el país por el Continente Europeo, durante los próximos tres meses. <br><br> Desde hoy, Sebastian emprenderá un viaje de grandes triunfos, corriendo primero la Copa Mundo de Leogan, luego pasará a correr el Crankwork de Francia uno de los festivales más grandes del mundo, de ahí estará entrenando en Morzine preparándose para la Copa Mundo en Andorra. Al terminar esta carrera va estar corriendo en Estados Unidos durante un mes.<br><br> Luego de esta experiencia pasará a Canadá a correr la última Copa Mundo en Monzantaine y el Crankwork de Whistler para regresar de nuevo a Colombia con el orgullo de haber representado al país y a nuestro municipio en estas importantes carreras a nivel mundial. Siendo esta su primera experiencia en el otro continente, le auguramos muchos éxitos y estamos convencidos que va obtener muchas medallas en su categoría.<br><br> ¡Muchos éxitos!</p>
+
+                        <div class="tags">
+                            <div class="row">
+                                <div class="col-lg-8 col-xs-12">
+                                    <i class="fas fa-tag"></i>
+                                    <ul>
+                                        <li><a href="#">Deporte</a></li>
+                                        <li><a href="#">Ciclismo</a></li>
+                                        <li><a href="#">Carreras</a></li>
+                                        <li><a href="#">Europa</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-4 col-xs-12">
+                                    <div class="comment text-right">
+                                        <span>Compatir:</span>
+                                        <a href="#">
+                                            <svg id="Group_1039" data-name="Group 1039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 28 28">
+  <defs>
+    <style>
+      #Group_1039 .cls-1, #Group_1039 .cls-2 {
+        fill: #647c88;
+      }
+
+      #Group_1039 .cls-1 {
+        fill-rule: evenodd;
+      }
+
+      #Group_1039 .cls-3 {
+        clip-path: url(#clip-path3);
+      }
+    </style>
+    <clipPath id="clip-path3">
+      <path id="Path_1194" data-name="Path 1194" d="M15.2,22V14h2.2l.3-2.8H15.2V9.8c0-.7.1-1.1,1.1-1.1h1.4V6H15.5c-2.7,0-3.6,1.3-3.6,3.6v1.7H10.2V14h1.7v8Z" transform="translate(-7.8 -3.6)"/>
+    </clipPath>
+  </defs>
+  <path id="Path_1192" data-name="Path 1192" class="cls-1" d="M14,0A14,14,0,1,1,0,14,14.041,14.041,0,0,1,14,0Zm0,1.9A12.1,12.1,0,1,1,1.9,14,12.078,12.078,0,0,1,14,1.9Z"/>
+  <g id="Group_1038" data-name="Group 1038">
+    <g id="Group_1037" data-name="Group 1037">
+      <path id="Path_1193" data-name="Path 1193" class="cls-2" d="M15.2,22V14h2.2l.3-2.8H15.2V9.8c0-.7.1-1.1,1.1-1.1h1.4V6H15.5c-2.7,0-3.6,1.3-3.6,3.6v1.7H10.2V14h1.7v8Z"/>
+      <g id="Group_1036" data-name="Group 1036" class="cls-3" transform="translate(7.8 3.6)">
+        <rect id="Rectangle_801" data-name="Rectangle 801" class="cls-2" width="12.4" height="20.9"/>
+      </g>
+    </g>
+  </g>
+</svg>
+                                        </a>
+                                        <a href="#">
+                                            <svg id="Group_1043" data-name="Group 1043" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 28 28">
+  <defs>
+    <style>
+      #Group_1043 .cls-1, #Group_1043 .cls-2 {
+        fill: #49bced;
+      }
+
+      #Group_1043 .cls-1 {
+        fill-rule: evenodd;
+      }
+
+      #Group_1043 .cls-3 {
+        clip-path: url(#clip-path2);
+      }
+    </style>
+    <clipPath id="clip-path2">
+      <path id="Path_1197" data-name="Path 1197" d="M13.8,11.3v.5l-.5-.1A7.9,7.9,0,0,1,8.5,9.3l-.6-.6-.2.5a2.955,2.955,0,0,0,.6,3c.4.4.3.5-.4.2a1.338,1.338,0,0,0-.5-.1,3.346,3.346,0,0,0,.4,1.4A3.531,3.531,0,0,0,9.2,15l.5.2H9.1c-.6,0-.6,0-.5.2a2.962,2.962,0,0,0,1.9,1.7l.6.2-.5.3a6.083,6.083,0,0,1-2.7.8,2.767,2.767,0,0,0-.8.1,6.675,6.675,0,0,0,1.9.9,8.071,8.071,0,0,0,6.6-.8,8.385,8.385,0,0,0,3.3-3.9,11.773,11.773,0,0,0,.7-3c0-.5,0-.5.6-1.1.3-.3.6-.7.7-.8.1-.2.1-.2-.4,0-.9.3-1,.3-.6-.2a2.824,2.824,0,0,0,.7-1.1.774.774,0,0,0-.3.1,2.39,2.39,0,0,1-.9.3l-.5.2-.5-.3a2.263,2.263,0,0,0-.9-.4,5.437,5.437,0,0,0-1.8,0A2.831,2.831,0,0,0,13.8,11.3Z" transform="translate(-4.7 -5.9)"/>
+    </clipPath>
+  </defs>
+  <path id="Path_1195" data-name="Path 1195" class="cls-1" d="M14,0A14,14,0,1,1,0,14,14.041,14.041,0,0,1,14,0Zm0,1.9A12.1,12.1,0,1,1,1.9,14,12.078,12.078,0,0,1,14,1.9Z"/>
+  <g id="Group_1042" data-name="Group 1042">
+    <g id="Group_1041" data-name="Group 1041">
+      <path id="Path_1196" data-name="Path 1196" class="cls-2" d="M13.8,11.3v.5l-.5-.1A7.9,7.9,0,0,1,8.5,9.3l-.6-.6-.2.5a2.955,2.955,0,0,0,.6,3c.4.4.3.5-.4.2a1.338,1.338,0,0,0-.5-.1,3.346,3.346,0,0,0,.4,1.4A3.531,3.531,0,0,0,9.2,15l.5.2H9.1c-.6,0-.6,0-.5.2a2.962,2.962,0,0,0,1.9,1.7l.6.2-.5.3a6.083,6.083,0,0,1-2.7.8,2.767,2.767,0,0,0-.8.1,6.675,6.675,0,0,0,1.9.9,8.071,8.071,0,0,0,6.6-.8,8.385,8.385,0,0,0,3.3-3.9,11.773,11.773,0,0,0,.7-3c0-.5,0-.5.6-1.1.3-.3.6-.7.7-.8.1-.2.1-.2-.4,0-.9.3-1,.3-.6-.2a2.824,2.824,0,0,0,.7-1.1.774.774,0,0,0-.3.1,2.39,2.39,0,0,1-.9.3l-.5.2-.5-.3a2.263,2.263,0,0,0-.9-.4,5.437,5.437,0,0,0-1.8,0A2.831,2.831,0,0,0,13.8,11.3Z"/>
+      <g id="Group_1040" data-name="Group 1040" class="cls-3" transform="translate(4.7 5.9)">
+        <rect id="Rectangle_802" data-name="Rectangle 802" class="cls-2" width="18.7" height="16.3"/>
+      </g>
+    </g>
+  </g>
+</svg>
+
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <div class="pagi">
+                        <div class="row flex">
+                            <div class="col-lg-6 col-xs-12">
+                                <a href="#" class="item">
+                                    <img src="images/pagi.jpg" alt="">
+                                    <div class="text">
+                                        <p>Anterior</p>
+                                        <h3>Camino a la conquista en el continente Europeo</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-xs-12">
+                                <a href="#" class="item right">
+                                    <img src="images/pagi.jpg" alt="">
+                                    <div class="text">
+                                        <p>Anterior</p>
+                                        <h3>Camino a la conquista en el continente Europeo</h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5">
+                    <aside>
+                        <div class="widget recent clearfix">
+                            <h3>Noticias Recientes</h3>
+                            <ul>
+                                <li class="clearfix">
+                                    <a href="#">
+                                       <img src="images/recent.jpg" alt="">
+                                        <div class="text">
+                                            <date>05 ABRIL</date>
+                                            <h4>Camino a la conquista en el continente Europeo</h4>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="clearfix">
+                                    <a href="#">
+                                       <img src="images/recent.jpg" alt="">
+                                        <div class="text">
+                                            <date>05 ABRIL</date>
+                                            <h4>Camino a la conquista en el continente Europeo</h4>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="clearfix">
+                                    <a href="#">
+                                       <img src="images/recent.jpg" alt="">
+                                        <div class="text">
+                                            <date>05 ABRIL</date>
+                                            <h4>Camino a la conquista en el continente Europeo</h4>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="clearfix">
+                                    <a href="#">
+                                       <img src="images/recent.jpg" alt="">
+                                        <div class="text">
+                                            <date>05 ABRIL</date>
+                                            <h4>Camino a la conquista en el continente Europeo</h4>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="widget cat">
+                            <h3>Categorías</h3>
+                            <ul>
+                                <li class="clearfix">
+                                    <a href="#" class="clearfix">
+                                     <span class="pull-left">Deporte</span><span class="pull-right">(2)</span>
+                                    </a>
+                                </li>
+                                <li class="clearfix">
+                                    <a href="#" class="clearfix">
+                                     <span class="pull-left">Deporte</span><span class="pull-right">(2)</span>
+                                    </a>
+                                </li>
+                                <li class="clearfix">
+                                    <a href="#" class="clearfix">
+                                     <span class="pull-left">Deporte</span><span class="pull-right">(2)</span>
+                                    </a>
+                                </li>
+                                <li class="clearfix">
+                                    <a href="#" class="clearfix">
+                                     <span class="pull-left">Deporte</span><span class="pull-right">(2)</span>
+                                    </a>
+                                </li>
+                                <li class="clearfix">
+                                    <a href="#" class="clearfix">
+                                     <span class="pull-left">Deporte</span><span class="pull-right">(2)</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="widget recent-event">
+                            <h3>Eventos</h3>
+                            <ul>
+                                <li class="item clearfix">
+                                    <div class="date">
+                                        <p>15</p>
+                                        <small>marzo</small>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#" class="title">Maratón de mes de la mujer</a>
+                                        <div class="time"><i class="far fa-clock"></i> 8:00 a.m. - 11:30 a.m.</div>
+                                        <div class="place"><i class="fas fa-map-marker-alt"></i> Unidad deportiva de Caldas</div>
+                                    </div>
+                                </li>
+                                <li class="item clearfix">
+                                    <div class="date">
+                                        <p>15</p>
+                                        <small>marzo</small>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#" class="title">Maratón de mes de la mujer</a>
+                                        <div class="time"><i class="far fa-clock"></i> 8:00 a.m. - 11:30 a.m.</div>
+                                        <div class="place"><i class="fas fa-map-marker-alt"></i> Unidad deportiva de Caldas</div>
+                                    </div>
+                                </li>
+                                <li class="item clearfix">
+                                    <div class="date">
+                                        <p>15</p>
+                                        <small>marzo</small>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#" class="title">Maratón de mes de la mujer</a>
+                                        <div class="time"><i class="far fa-clock"></i> 8:00 a.m. - 11:30 a.m.</div>
+                                        <div class="place"><i class="fas fa-map-marker-alt"></i> Unidad deportiva de Caldas</div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row flex">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="widget">
+                                <img src="images/footer-logo.png" alt="" class="footer-logo img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="widget">
+                                <p><b>HORARIOS DE ATENCIÓN:</b> <br> Lunes a jueves de 7:00 a.m. a 12 m. y de 1:00 p.m. a 5:00 pm. Viernes de 8:00 a.m. a 12m. y de 2:00 p.m. a 4:00 p.m.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="widget">
+                                <p>
+                                    Política de Privacidad <br> Condiciones de Uso del Sitio Web <br> Política Editorial Web <br> Directorio de dependencias <br> Sucursales o regionales
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="widget">
+                                <p>
+                                    Chat y asesoría en línea <br> Correo interno <br> Peticiones, quejas y reclamos <br> Ver mapa del sitio <br> Contador de visitas: 1,803,745
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="copy-right text-center">
+                                <p>Instituto de deporte y Recreación de Caldas INDEC - Carrera 46 N° 132 sur 50 Caldas - Antioquia - Colombia <br> gerencia@indeccaldas.gov.co - 2784010 - 2783211</p>
+                                <div class="footer-social">
+                                    <a data-toggle="tooltip" data-placement="bottom" title="Facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a data-toggle="tooltip" data-placement="bottom" title="Youtube" href="#"><i class="fab fa-youtube"></i></a>
+                                    <a data-toggle="tooltip" data-placement="bottom" title="Twitter" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a data-toggle="tooltip" data-placement="bottom" title="Pinterest" href="#"><i class="fab fa-pinterest-p"></i></a>
+                                    <a data-toggle="tooltip" data-placement="bottom" title="Instagram" href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <div class="container text-center">Copyright 2018</div>
+        </div>
+        <a href="#body"><svg id="go-top" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 62 68.579">
+              <defs>
+                <style>
+                  #go-top .cls-1 {
+            fill: #fecc37;
+            stroke: #fff;
+            stroke-width: 2px;
+                  }
+            
+                  #go-top .cls-2 {
+            fill: #fff;
+                  }
+            
+                  #go-top .cls-3 {
+            stroke: none;
+                  }
+            
+                  #go-top .cls-4 {
+            fill: none;
+                  }
+            
+                  #go-top .cls-5 {
+            filter: url(#Path_534);
+                  }
+            
+                  #go-top .cls-6 {
+            filter: url(#Rectangle_788);
+                  }
+                </style>
+                <filter id="Rectangle_788" x="0" y="0" width="62" height="68.579" filterUnits="userSpaceOnUse">
+                  <feOffset input="SourceAlpha"/>
+                  <feGaussianBlur stdDeviation="2" result="blur"/>
+                  <feFlood flood-opacity="0.502"/>
+                  <feComposite operator="in" in2="blur"/>
+                  <feComposite in="SourceGraphic"/>
+                </filter>
+                <filter id="Path_534" x="12.026" y="13.342" width="37.67" height="25.366" filterUnits="userSpaceOnUse">
+                  <feOffset input="SourceAlpha"/>
+                  <feGaussianBlur stdDeviation="1.5" result="blur-2"/>
+                  <feFlood flood-opacity="0.502"/>
+                  <feComposite operator="in" in2="blur-2"/>
+                  <feComposite in="SourceGraphic"/>
+                </filter>
+              </defs>
+              <g id="Group_1012" data-name="Group 1012" transform="translate(-4403 -6432)">
+                <g class="cls-6" transform="matrix(1, 0, 0, 1, 4403, 6432)">
+                  <g id="Rectangle_788-2" data-name="Rectangle 788" class="cls-1" transform="translate(6 6)">
+            <rect class="cls-3" width="50" height="56.579"/>
+            <rect class="cls-4" x="1" y="1" width="48" height="54.579"/>
+                  </g>
+                </g>
+                <g id="Group_1011" data-name="Group 1011" transform="translate(4419.526 6466.208) rotate(-90)">
+                  <g id="Group_433" data-name="Group 433" transform="translate(0)">
+            <g class="cls-5" transform="matrix(0, 1, -1, 0, 34.21, -16.53)">
+              <path id="Path_534-2" data-name="Path 534" class="cls-2" d="M15.741,15.741,3.4,28.084A1.989,1.989,0,0,1,.586,25.272L11.523,14.335.586,3.4A1.989,1.989,0,0,1,3.4.586L15.741,12.929a2.1,2.1,0,0,1,.625,1.406,2.1,2.1,0,0,1-.625,1.406Zm0,0" transform="translate(16.53 34.21) rotate(-90)"/>
+            </g>
+                  </g>
+                </g>
+              </g>
+            </svg></a>
+    </footer>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/slick.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script src="js/custom.js" type="text/javascript"></script>
+</body>
+
+</html>

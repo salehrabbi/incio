@@ -1,7 +1,11 @@
 @import '_rem';
 
 
-@media (max-width:1199px){
+@media (max-width:1199px) {
+    .main-content-single article .tags .comment {
+        text-align: left;
+        margin-top: 10px;
+    }
     /*Menu responsive*/
     .navbar-header {
         float: none;
@@ -223,8 +227,12 @@
     .service .service-provide {
         padding-top: 65px;
     }
+    .main-content-single {
+        aside {
+            margin-top: 50px;
+        }
+    }
 
-    
 }
 
 @media (max-width:767px) {
@@ -279,6 +287,9 @@
         padding: 10px 15px;
         font-size: rem(20px);
     }
+    .main-content-single article h2 {
+        font-size: 30px;
+    }
 }
 
 
@@ -295,5 +306,25 @@
             width: 100%;
             padding: 15px;
         }
+    }
+    aside .recent-event .item {
+        margin-bottom: 20px;
+        display: block;
+        border-bottom: 1px solid #E8E8E8;
+        padding-bottom: 20px;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    aside .recent-event .item .date {
+        border-right: none;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .main-content-single article h2 {
+        font-size: 23px;
+    }
+    .page-top h1 {
+        font-size: 26px;
     }
 }
